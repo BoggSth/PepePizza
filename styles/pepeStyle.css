@@ -1,0 +1,38 @@
+     
+.logoPic{
+    border-radius: 25px; 
+    width:100%;
+    height: 350px;
+    }
+        
+.bodyCSS{
+    margin-bottom: 500px;
+    }
+
+.image-display{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    background-color: azure;
+
+}
+
+button{
+    border-radius: 25px;
+}
+
+.product-container {
+    padding-top: 40px;
+    padding-bottom: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-right: 1px solid rgb(231, 231, 231);
+    border-bottom: 1px solid rgb(231, 231, 231);
+    display: flex;
+    flex-direction: column;
+}
+
+.details-button{
+    margin-bottom: 30px;
+}
