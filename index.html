@@ -1,22 +1,59 @@
 <!DOCTYPE html>
 	<head>
-		<title>Products for Pepe Pizza by BBSM</title>
+		<title>ONLINE BBSM PRODUCTS</title>
+
+        <link rel="stylesheet" href="styles/shared/bbsm-header.css">
         
-        <link rel = "stylesheet" href = "styles/pepeStyle.css">
+        <link rel = "stylesheet" href = "styles/bbsmStyle.css">
 
 	</head>
 
 	<body class = "bodyCSS">
+
+    <div class="bbsm-header">
+      <div class="bbsm-header-left-section">
+        <a href="index.html" class="header-link">
+          <img class="bbsm-logo"
+            src="images-logo/bbsm-logo.png">
+          <h1 class="bbsm-word-logo">BBSM</h1>
+
+        </a>
+      </div>
+
+      <div class="bbsm-header-middle-section">
+        <input class="search-bar" type="text" placeholder="Search">
+
+        <button class="search-button">
+            <img class="search-icon" src="images-icon/search-icon.png"> 
+        </button>
+      </div>
+
+      <div class="bbsm-header-right-section">
+        <a class="orders-link header-link" href="orders.html">
+          <span class="returns-text">Returns</span>
+          <span class="orders-text">& Orders</span>
+        </a>
+
+        <a class="cart-link header-link" href="checkout.html">
+          <img class="cart-icon" src="images-icon/cart-icon.png">
+          <div class="cart-quantity js-cart-quantity">0</div>
+          <div class="cart-text">Cart</div>
+        </a>
+      </div>
+    </div>	
+    
+    
+
 			
-		<h1>PEPE PRODUCTS</h1>	
+		<h1>PROMOTIONAL BBSM PRODUCTS</h1>	
 			
 				<div class = "image-display js-image-display">
 
 				</div>	
 			
-			<script src= "scripts/product.js"> </script>
 			
-			<script src= "scripts/pepeScript.js"> </script>
+			<script type = "module" src= "scripts/bbsmScript.js"> </script>
+
 			
 			<!--
 			<script src= "scripts/product.js"> </script>
