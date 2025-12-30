@@ -23,7 +23,8 @@
      - repeat(8, 1fr); is a shortcut for repeating "1fr"
        8 times (instead of typing out "1fr" 8 times).
        repeat(...) is a special property that works with
-       display: grid; */
+       display: grid;
+   */
   grid-template-columns: repeat(8, 1fr);
 }
 
@@ -99,6 +100,7 @@ button{
     border-bottom: 1px solid rgb(231, 231, 231);
     display: flex;
     flex-direction: column;
+    border: 2px black solid;
 }
 
 .details-button{
