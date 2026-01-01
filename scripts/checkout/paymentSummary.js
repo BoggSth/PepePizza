@@ -7,6 +7,7 @@ export function renderPaymentSummary(){
     
     let productPriceCents = 0;
     let shippingPriceCents = 0;
+    let cartQuantity = 0;
     
     cart.forEach((cartItem) =>{
         const product = getProduct(cartItem.productId);
@@ -27,12 +28,11 @@ export function renderPaymentSummary(){
         });
 
         shippingPriceCents += deliveryOption.priceCents;
+
+        cartQuantity += cartItem.quantity;
       
-
     });    
-        console.log(shippingPriceCents);
-
-        const totalBeforTaxCents = productPriceCents + shippingPriceCents
+        const totalBeforTaxCents = (productPriceCents *100) + shippingPriceCents
         const taxCents = totalBeforTaxCents * 0.13;
         const totalCents = totalBeforTaxCents + taxCents;
 
@@ -43,37 +43,37 @@ export function renderPaymentSummary(){
             </div>
 
             <div class="payment-summary-row">
-            <div>Items (3):</div>
+            <div>Items (${cartQuantity}):</div>
             <div class="payment-summary-money">
-                $${formatCurrency(productPriceCents)}
+                Rs. ${formatCurrency(productPriceCents *100)}
             </div>
             </div>
 
             <div class="payment-summary-row">
             <div>Shipping &amp; handling:</div>
             <div class="payment-summary-money">
-                $${formatCurrency(shippingPriceCents)}
+                Rs. ${formatCurrency(shippingPriceCents)}
             </div>
             </div>
 
             <div class="payment-summary-row subtotal-row">
             <div>Total before tax:</div>
             <div class="payment-summary-money">
-                $${formatCurrency(totalBeforTaxCents)}
+                Rs. ${formatCurrency(totalBeforTaxCents)}
             </div>
             </div>
 
             <div class="payment-summary-row">
             <div>Estimated VAT (13%):</div>
             <div class="payment-summary-money">
-                $${formatCurrency(taxCents)}
+               Rs. ${formatCurrency(taxCents)}
             </div>
             </div>
 
             <div class="payment-summary-row total-row">
             <div>Order total:</div>
             <div class="payment-summary-money">
-                $${formatCurrency(totalCents)}
+                Rs. ${formatCurrency(totalCents)}
             </div>
             </div>
 

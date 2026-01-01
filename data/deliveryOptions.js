@@ -8,12 +8,12 @@ export let deliveryOptions = [
     {
         deliveryId: '2',
         deliveryDays: 3,
-        priceCents: 499
+        priceCents: 10000
     },
     {
         deliveryId: '3',
         deliveryDays: 1,
-        priceCents: 999
+        priceCents: 20000
     }   
 ];
 

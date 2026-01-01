@@ -79,7 +79,7 @@ export function renderOrderSummary(){
 
             const priceString = deliveryOption.priceCents===0
                                 ? 'FREE'
-                                : `$${formatCurrency(deliveryOption.priceCents)} -` ;
+                                : `Rs. ${formatCurrency(deliveryOption.priceCents)} -` ;
             const isChecked = deliveryOption.deliveryId === cartItem.deliveryOptionId;
             
             deliveryHTML += `
